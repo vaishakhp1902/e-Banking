@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<head>
+<title>TOURISM</title>
+<meta charset="utf-8">
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<!-- CSS Files -->
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
+<!-- Contact Form -->
+<link href="contact-form/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<!-- JS Files -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="js/jquery.tools.min.js"></script>
+<script>
+$(function () {
+    $("#prod_nav ul").tabs("#panes > div", {
+        effect: 'fade',
+        fadeOutSpeed: 400
+    });
+});
+</script>
+ <script language="Javascript" type="text/javascript">
+
+        function onlyAlphabets(e, t) {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                }
+                else if (e) {
+                    var charCode = e.which;
+                }
+                else { return true; }
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+                    return true;
+                else
+                    return false;
+            }
+            catch (err) {
+                alert(err.Description);
+            }
+        }
+
+    </script>
+
+<script>
+$(document).ready(function () {
+    $(".pane-list li").click(function () {
+        window.location = $(this).find("a").attr("href");
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<!-- Main Menu -->
+<ol id="menu">
+  <li class="active_menu_item"><a href="index.html" style="color:#FFF">Home</a>
+    <!-- sub menu -->
+    
+  </li>
+  <!-- end sub menu -->
+  <li><a href="Login.jsp">Login</a>
+    <!-- sub menu -->
+   
+  </li>
+  <!-- end sub menu -->
+ 
+  <li><a href="latest.jsp">NEW PACKAGES</a>
+    <!-- sub menu -->
+ 
+  </li>
+   <li><a href="loans.jsp">INTERNATIONAL TOURS</a>
+    <!-- sub menu -->
+ 
+  </li>
+   <li><a href="deposit.jsp">DOMESTIC TOURS</a>
+    <!-- sub menu -->
+ 
+  </li>
+   <li><a href="about.jsp">About Us</a>
+    <!-- sub menu -->
+ 
+  </li>
+  <!-- end sub menu -->
+  <li><a href="contact.html">Contact</a></li>
+</ol>
+<div id="container">
+    <div id="site_title"><a href="index.html" style="color: #FFF;font-size: 25px"> TRAVEL</a></div>
+  <!-- tab panes -->
+  <div id="prod_wrapper">
+    <div id="panes">
+      <div> <img src="img/demo/1.jpg" alt="">
+        <h2>Fixed Deposit</h2>
+        <b>&#9658;E-Banking Short-Term FD Rates</b>
+        <p>
+            the travel website offers to various places</p>
+        
+
+        <p style="text-align:right; margin-right: 16px"><a href="deposit.jsp" class="button">More Info</a> </p>
+      </div>
+      <div> <img src="img/demo/2.jpg" alt="">
+        <h2>Home Loans</h2>
+        <p>this website offers you an opportunity to book the hotels to various domestic and international destinations. </p>
+        <p style="text-align:right; margin-right: 16px"><a href="loans.jsp" class="button">More Info</a> </p>
+      </div>
+      <div> <img src="img/demo/3.jpg" alt="">
+        <h2>Destinations Offered</h2>
+        <b> <p>New Car Loans</p></b><ol><li>&#9658;
+                Up to 85% on road funding</li><li>&#9658; 100% funding scheme for select
+                corporate customers </li><li>&#9658; Simple and hassle free procedures</li><li>&#9658;No income document scheme for select profiles</li> </ol>
+        <p style="text-align:right; margin-right: 16px"><a href="loans.jsp" class="button">More Info</a> </p>
+      </div>
+      <div> <img src="img/demo/4.jpg" alt="">
+        <h2>Deposit Loans</h2>
+        <ol> <b>   <p>Introducing Loan Against Fixed Deposits from E-Banking Bank. </p></b><li>&#9658;Get access to funds up to 85% of the value of your FD</li><li>&#9658; Interest charged only on the Amount utilized and for the tenure of utilization</li>
+
+            <li>&#9658;Overdraft Account with Cheque Book, ATM card and Internet Banking facilities</li>
+            <li>&#9658;Overdraft facility tenure up to the remaining tenure of the underlying FD on renewable basis</li>
+            <li>&#9658;Funds available at competitive rates<li></ol>
+        <p style="text-align:right; margin-right: 16px"><a href="loans.jsp" class="button">More Info</a> </p>
+      </div>
+      <div> <img src="img/demo/5.jpg" alt="">
+        <h2>Money Transfer</h2>
+        <p>Lower your EMI burden and save money by transferring your existing home loan to E-Banking Bank. We offer home loans starting at 9.55% rate of interest.
+            
+ 
+            For women applicants, home loan interest rates start at 9.50%. </p><p>National Electronic Funds Transfer (NEFT) is a nation-wide payment system facilitating one-to-one funds transfer. Under this Scheme, individuals can electronically transfer funds from any bank branch to any individual having an account with any other bank branch in the country participating in the Scheme</p>
+        <p style="text-align:right; margin-right: 16px"><a href="transfer.jsp" class="button">More Info</a> </p>
+      </div>
+    </div>
+    <!-- END tab panes -->
+    <br clear="all">
+    <!-- navigator -->
+    <div id="prod_nav">
+      <ul>
+        <li><a href="#1"><img src="img/demo/1.jpg" width="160" alt=""><strong>Fixed Deposit</strong></a></li>
+        <li><a href="#2"><img src="img/demo/2.jpg" width="160" alt=""><strong>Home Loans</strong></a></li>
+        <li><a href="#3"><img src="img/demo/3.jpg" width="160" alt=""><strong>Car Loans</strong></a></li>
+        <li><a href="#4"><img src="img/demo/4.jpg" width="160" alt=""><strong>Deposit Loans </strong></a></li>
+        <li><a href="#5"><img src="img/demo/5.jpg" width="160" alt=""><strong>Money Transfer</strong></a></li>
+      </ul>
+    </div>
+    <!-- END navigator -->
+  </div>
+  <!-- END prod wrapper -->
+  <div style="clear:both"></div>
+  <div class="one-third">
+    <h2>Become a member</h2>
+    <p>Any of the following institutions may file an application for membership:
+
+a newly organizing state bank (de novo);
+an existing state nonmember bank;
+an existing national bank that seeks to convert to a state charter and continue as a member bank; or
+a thrift or other depository institution converting to a state bank charter.</p>
+    <p style="text-align:right; margin-right: 15px"><a href="register.jsp" class="button_small">Find out more</a></p>
+  </div>
+  <div class="one-third">
+    <h2>Visit our Social Life</h2>
+    <p>We focus on driving our strategy of growing responsibly, managing our risk, and deepening our relationships and engagement with customers, clients, communities and other stakeholders. We support local, national and global efforts to fulfill our purpose of making financial lives better – recognizing that we only succeed when others are thriving.</p>
+    <p style="text-align:right; margin-right: 15px"><a href="social.jsp" class="button_small">Visit Us Today</a></p>
+  </div>
+  <div class="one-third last">
+    <h2>Latest News</h2>
+    <p>The Reserve Bank permitted banks to bring down the statutory liquidity ratio securities under held-to-maturity category by 1.25 per cent to 20.50 per cent by 2017.<br>IDBI Bank Ltd it will raise Rs 3,771 crore instead of an earlier plan of raising Rs 2,800 crore through qualified institutional plans (QIP) route.</p>
+    <p style="text-align:right; margin-right: 15px"><a href="latest.jsp" class="button_small">Read Article</a></p>
+  </div>
+  <div style="clear:both"></div>
+  <div class="box_highlight" style="margin-top:40px"><img src="img/demo/indian.jpg" width="930" height="120" alt="indian"/>
+
+
+  </div>
+  <div class="one-half">
+    <div class="heading_bg">
+      <h2>About Us</h2>
+    </div>
+      <blockquote><p> E-banking, is an electronic payment system that enables customers of a bank or other financial institution to conduct a range of financial transactions through the financial institution's website.</p> The online banking system will typically connect to or be part of the core banking system operated by a bank and is in contrast to branch banking that was the traditional way customers access banking services.<p>To access a financial institution's online banking facility, a customer with internet access would need to register with the institution for the service, and set up a password and other credentials for customer verification. The credentials for online banking is normally not the same as for telephone or mobile banking. Financial institutions now routinely allocate customers numbers, whether or not customers have indicated an intention to access their online banking facility. Customers' numbers are normally not the same as account numbers, because a number of customer accounts can be linked to the one customer number. The customer number can be linked to any account that the customer controls, such as cheque, savings, loan, credit card and other accounts.</p> </blockquote>
+    <p style="text-align:right; margin-right: 16px; margin-bottom: 15px"><a href="about.jsp" class="button" style="font-size: 18px">Find out more</a></p>
+   </div>
+  <div class="one-half last">
+      <div class="heading_bg"><a href="EmailForm.jsp">Email</a>
+      <h2>Contact us today!</h2>
+    </div>
+    <form action="contact1.html" class="TTWForm" method="post">
+      <div id="field1-container" class="field f_50">
+        <label for="field1">Name</label>
+        <input name="name" onkeypress="return onlyAlphabets(event,this);"  name="name" required style="border-radius:20px" id="field1" type="text">
+      </div>
+      <div id="field2-container" class="field f_50">
+        <label for="field2">Telephone</label>
+        <input name="tel" name="name" required style="border-radius:20px" id="field2" type="text">
+      </div>
+      <div id="field5-container" class="field f_50">
+        <label for="field5">Email</label>
+        <input name="email" name="name" required style="border-radius:20px" id="field5" type="email">
+      </div>
+      <div id="field4-container" class="field f_100">
+        <label for="field4">Message</label>
+        <textarea rows="5" cols="20" name="name" required style="border-radius:20px" name="message" id="field4"></textarea>
+      </div>
+      <div id="form-submit" class="field f_100 clearfix submit">
+        <input value="Submit" type="submit">
+      </div>
+    </form>
+  </div>
+  <div style="clear:both; height: 40px"></div>
+</div>
+<!-- END container -->
+<div id="footer">
+    <!-- First Column --><center>
+  <img src="img/demo/saving.gif" width="400" height="150" alt="saving"/>
+    </center>
+  <!-- END footer --></div>
+</body>
+</html>

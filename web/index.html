@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<head>
+<title>Travels</title>
+<meta charset="utf-8">
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<!-- CSS Files -->
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
+<!-- Contact Form -->
+<link href="contact-form/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<!-- JS Files -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="js/jquery.tools.min.js"></script>
+<script>
+$(function () {
+    $("#prod_nav ul").tabs("#panes > div", {
+        effect: 'fade',
+        fadeOutSpeed: 400
+    });
+});
+</script>
+ <script language="Javascript" type="text/javascript">
+
+        function onlyAlphabets(e, t) {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                }
+                else if (e) {
+                    var charCode = e.which;
+                }
+                else { return true; }
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+                    return true;
+                else
+                    return false;
+            }
+            catch (err) {
+                alert(err.Description);
+            }
+        }
+
+    </script>
+
+<script>
+$(document).ready(function () {
+    $(".pane-list li").click(function () {
+        window.location = $(this).find("a").attr("href");
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<!-- Main Menu -->
+<ol id="menu">
+  <li class="active_menu_item"><a href="index.html" style="color:#FFF">Home</a>
+    <!-- sub menu -->
+    
+  </li>
+  <!-- end sub menu -->
+  <li><a href="Login.jsp">Login</a>
+    <!-- sub menu -->
+   
+  </li>
+  <!-- end sub menu -->
+ 
+  <li><a href="latest.jsp">Interntional </a>
+    <!-- sub menu -->
+ 
+  </li>
+   <li><a href="loans.jsp">Domestic </a>
+    <!-- sub menu -->
+ 
+  </li>
+   <li><a href="deposit.jsp">Offers</a>
+    <!-- sub menu -->
+ 
+  </li>
+   <li><a href="about.jsp">About Us</a>
+    <!-- sub menu -->
+ 
+  </li>
+  <!-- end sub menu -->
+  <li><a href="contact.html">Contact</a></li>
+</ol>
+<div id="container">
+    <div id="site_title"><a href="index.html" style="color: #FFF;font-size: 25px"> Travels</a></div>
+  <!-- tab panes -->
+  <div id="prod_wrapper">
+    <div id="panes">
+      <div> <img src="img/demo/1.jpg" alt="">
+        <h2>Destinations</h2>
+        <b>&#9658;huge list of destinations</b>
+        <p>
+            offers international destinations</p>
+        <b>&#9658;includes the visa formatilities and fees.</b><p>
+            offers domestic destinations</p> 
+        <b>&#9658;packages made according to need.</b>
+        <p>membership discount offered.</p>
+
+        <p style="text-align:right; margin-right: 16px"><a href="deposit.jsp" class="button">More Info</a> </p>
+      </div>
+      <div> <img src="img/demo/2.jpg" alt="">
+        <h2>DUBAI</h2>
+        <p>Tourism in Dubai is a part of the Dubai government's strategy to maintain the flow of foreign cash into the emirates. Dubai's lure for tourists is based mainly on shopping, but also on its possession of other ancient and modern attractions. </p>
+        <p style="text-align:right; margin-right: 16px"><a href="loans.jsp" class="button">More Info</a> </p>
+      </div>
+      <div> <img src="img/demo/3.jpg" alt="">
+        <h2>RAJASTHAN</h2>
+    <p> Rajasthan is a northern Indian state bordering Pakistan. Its palaces and forts are reminders of the many kingdoms that historically vied for the region. In its capital, Jaipur (the "Pink City"), are the 18th-century City Palace and Hawa Mahal, a former cloister for royal women, fronted by a 5-story pink-sandstone screen. Amer Fort, atop a nearby hill, was built by a Rajput prince in the early 1600s.</p>
+        <p style="text-align:right; margin-right: 16px"><a href="loans.jsp" class="button">More Info</a> </p>
+      </div>
+      <div> <img src="img/demo/4.jpg" alt="">
+        <h2>JAMMU & KASHMIR</h2>
+        <p>Jammu and Kashmir is a state in northern India, often denoted by its acronym, J&K. It is located mostly in the Himalayan mountains, and shares borders with the states of Himachal Pradesh and Punjab to the south. </p>
+        <p style="text-align:right; margin-right: 16px"><a href="loans.jsp" class="button">More Info</a> </p>
+      </div>
+      <div> <img src="img/demo/5.jpg" alt="">
+        <h2>ITLAY</h2>
+        <p>Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s "David" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.</p>
+        <p style="text-align:right; margin-right: 16px"><a href="transfer.jsp" class="button">More Info</a> </p>
+      </div>
+    </div>
+    <!-- END tab panes -->
+    <br clear="all">
+    <!-- navigator -->
+    <div id="prod_nav">
+      <ul>
+        <li><a href="#1"><img src="img/demo/1.jpg" width="160" alt=""><strong>Travel</strong></a></li>
+        <li><a href="#2"><img src="img/demo/2.jpg" width="160" alt=""><strong>Dubai</strong></a></li>
+        <li><a href="#3"><img src="img/demo/3.jpg" width="160" alt=""><strong>Rajasthan</strong></a></li>
+        <li><a href="#4"><img src="img/demo/4.jpg" width="160" alt=""><strong>Jammu & Kashmir</strong></a></li>
+        <li><a href="#5"><img src="img/demo/5.jpg" width="160" alt=""><strong>Itlay</strong></a></li>
+      </ul>
+    </div>
+    <!-- END navigator -->
+  </div>
+  <!-- END prod wrapper -->
+  <div style="clear:both"></div>
+  <div class="one-third">
+    <h2>Become a member</h2>
+    <p>(UNWTO) is the most widely recognised and the leading international organisation in travel and tourism today. It is a specialised agency of the United Nations. It serves as a global forum for tourism policy and a practical source of tourism know-how. With its headquarters in Madrid, Spain the World Tourism Organisation plays a central and decisive role in promoting development of responsible, sustainable and universally accessible tourism, with the aim of contributing to economic development, international understanding, peace prosperity and universal respect for and observance of human rights and fundamental freedoms.
+
+Its membership includes 150 countries and territories and more than 450 affiliate members representing local governments, tourism associations, educational institutes and private sector companies including airlines, hotels and tour operators.</p>
+    <p style="text-align:right; margin-right: 15px"><a href="register.jsp" class="button_small">Find out more</a></p>
+  </div>
+  <div class="one-third">
+    <h2>Visa Details</h2>
+    <p>The duly signed physical copy of the application form completed in all respect and submitted successfully, is to be submitted at the concerned Indian Visa Application Center (IVAC) or directly to Indian Mission/ Post, on the scheduled date of interview along with the requisite supporting documents. The instructions for filling the form and scheduling the appointment can be seen at Instructions for Regular Visa Application. Important technical information for filling online Indian visa application can be referred at Technical Instructions.</p>
+    <p style="text-align:right; margin-right: 15px"><a href="social.jsp" class="button_small">Visit Us Today</a></p>
+  </div>
+  <div class="one-third last">
+    <h2>Latest vouchers</h2>
+    <p>The portal permitted the users to make the packages according to their needs and also they cna  make use of the vouchers whenever they want.</p>
+    <p style="text-align:right; margin-right: 15px"><a href="latest.jsp" class="button_small">Read Article</a></p>
+  </div>
+  <div style="clear:both"></div>
+  <div class="box_highlight" style="margin-top:40px"><img src="img/demo/indian.jpg" width="930" height="120" alt="indian"/>
+
+
+  </div>
+  <div class="one-half">
+    <div class="heading_bg">
+      <h2>About Us</h2>
+    </div>
+      <blockquote><p> We at THE TRAVEL COMPANY treat our customers as family. We put in all efforts to make their trip a memorable one. Each kind of service is provided by iur firm. We also make customized holiday packages.<br>
+
+The following are our specialities
+Domestic Packages
+International Packages
+Adventure trips
+Road Trips
+School Trips</p> </blockquote>
+    <p style="text-align:right; margin-right: 16px; margin-bottom: 15px"><a href="about.jsp" class="button" style="font-size: 18px">Find out more</a></p>
+   </div>
+  <div class="one-half last">
+      <div class="heading_bg"><a href="EmailForm.jsp">Email</a>
+      <h2>Contact us today!</h2>
+    </div>
+    <form action="contact1.html" class="TTWForm" method="post">
+      <div id="field1-container" class="field f_50">
+        <label for="field1">Name</label>
+        <input name="name" onkeypress="return onlyAlphabets(event,this);"  name="name" required style="border-radius:20px" id="field1" type="text">
+      </div>
+      <div id="field2-container" class="field f_50">
+        <label for="field2">Telephone</label>
+        <input name="tel" name="name" required style="border-radius:20px" id="field2" type="text">
+      </div>
+      <div id="field5-container" class="field f_50">
+        <label for="field5">Email</label>
+        <input name="email" name="name" required style="border-radius:20px" id="field5" type="email">
+      </div>
+      <div id="field4-container" class="field f_100">
+        <label for="field4">Message</label>
+        <textarea rows="5" cols="20" name="name" required style="border-radius:20px" name="message" id="field4"></textarea>
+      </div>
+      <div id="form-submit" class="field f_100 clearfix submit">
+        <input value="Submit" type="submit">
+      </div>
+    </form>
+  </div>
+  <div style="clear:both; height: 40px"></div>
+</div>
+<!-- END container -->
+<div id="footer">
+    <!-- First Column --><center>
+  <img src="img/demo/saving.gif" width="400" height="150" alt="saving"/>
+    </center>
+  <!-- END footer --></div>
+</body>
+</html>
